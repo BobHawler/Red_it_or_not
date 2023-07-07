@@ -1,0 +1,12 @@
+{% load static %}
+<main>
+    <div class='ui grid'>
+        <div class='five wide column content'>
+            <h2>My Map</h2>
+        </div>
+        <div class='eleven wide column'>
+            <div id="map" class="map"></div>
+            <script type="text/JavaScript" src={% static 'main.js' %}></script>
+        </div>
+    </div>
+</main>
