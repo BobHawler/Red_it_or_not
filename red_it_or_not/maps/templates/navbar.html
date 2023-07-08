@@ -1,32 +1,35 @@
-<div class="ui inverted menu nav mb-7">
-    <div class="ui container">
-      <a href="" class="item">
-          <h3>Red-it-or-not</h3>
-      </a>
-      <div class="right menu">
-          {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
-               <div class="item">
-                <form action="" method="GET">
-                  <div class="ui action left icon input">
-                  <input class="prompt" type="text" name='q' placeholder="enter the city...">
-                  <i class="search icon"></i>
-                  <button type='submit' class="ui button">Search</button>
-                  </div>
-              </form>
-              </div>
-          
-              {% comment %} <a href="" class="item">
-                   {{ request.user }}
-              </a> {% endcomment %}
-  
-              <a href="" class="ui item">
-                  Logout
-              </a>
-          {% comment %} {% else %} {% endcomment %}
-          <a href="" class="ui item">
-                  Login
-              </a>
-          {% comment %} {% endif %} {% endcomment %}
-      </div>
+<div class="row">
+    <div class="ui inverted menu nav mb-7">
+        <div class="ui container">
+        <a href="" class="item">
+            <h3>Red-it-or-not</h3>
+        </a>
+        <div class="right menu">
+            {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
+                <div class="item">
+                    <form action="" method="GET">
+                    <div class="ui action left icon input">
+                    <input class="prompt" type="text" name='q' placeholder="enter the city...">
+                    <i class="search icon"></i>
+                    <button type='submit' class="ui button">Search</button>
+                    </div>
+                </form>
+                </div>
+            
+                {% comment %} <a href="" class="item">
+                    {{ request.user }}
+                </a> {% endcomment %}
+    
+                <a href="" class="ui item">
+                    Logout
+                </a>
+            {% comment %} {% else %} {% endcomment %}
+            <a href="" class="ui item">
+                    Login
+                </a>
+            {% comment %} {% endif %} {% endcomment %}
+        </div>
+        </div>
     </div>
-  </div>
+    </div>
+</div>
